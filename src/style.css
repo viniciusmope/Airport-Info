@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #3f1717, #1a0c0c);
+    height: 100vh;
+}
+
+.navtool {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.depart {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    color: #f7f2f2;
+}
+
+#horaAtual {
+    color: white;
+    
+   
+
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.086);
+    width: 800px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    margin-top: 30px;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.flightnumber {
+    padding: 30px;
+    font-size: large;
+    line-height: 27px;
+    color: white;
+}
+
+.destination {
+    padding: 30px;
+    font-size: large;
+    line-height: 27px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.flighthour {
+    padding: 30px;
+    font-size: large;
+    line-height: 27px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.flightstatus {
+    padding: 30px;
+    font-size: large;
+    line-height: 27px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+}
