@@ -5,8 +5,13 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #3f1717, #1a0c0c);
+    background: linear-gradient(to bottom, #26324C, #2F4C6C);
     height: 100vh;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
 }
 
 .navtool {
@@ -25,14 +30,12 @@ body {
     color: #f7f2f2;
 }
 
-#horaAtual {
+#clock {
     color: white;
-    
-   
-
 }
 
-.container {
+.flights {
+    padding: 0 30px 0 30px;
     background-color: rgba(255, 255, 255, 0.086);
     width: 800px;
     height: 500px;
@@ -45,24 +48,22 @@ body {
 }
 
 .flightnumber {
-    padding: 30px;
-    font-size: large;
+    padding: 30px 0 30px 0;
     line-height: 27px;
-    color: white;
+    color: rgb(255, 242, 56);
 }
 
 .destination {
-    padding: 30px;
-    font-size: large;
+    padding: 30px 0 30px 0;
     line-height: 27px;
     color: white;
     display: flex;
     flex-direction: column;
+    white-space: nowrap;
 }
 
 .flighthour {
-    padding: 30px;
-    font-size: large;
+    padding: 30px 0 30px 0;
     line-height: 27px;
     color: white;
     display: flex;
@@ -70,14 +71,25 @@ body {
 }
 
 .flightstatus {
-    padding: 30px;
-    font-size: large;
+    padding: 30px 0 30px 0;
     line-height: 27px;
-    color: white;
+    color: #7CC508;
     display: flex;
     flex-direction: column;
 }
 
 li {
     list-style-type: none;
+}
+
+li:nth-child(even) {
+    background-color: #26324C; /* Cor de fundo para itens pares */
+}
+
+li:nth-child(odd) {
+background-color: #2F4C6C; /* Cor de fundo para itens ímpares */
+}
+
+.flightnumber > li {
+    text-align: center;
 }
